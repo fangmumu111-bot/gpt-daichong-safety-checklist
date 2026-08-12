@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPT代充安全吗？2026 国内 ChatGPT Plus / Pro 安全核验清单</title>
+  <meta name="description" content="购买 GPT 代充前，用 5 分钟检查账号控制权、密码验证码、支付透明度、订单查询、退款售后和高危信号。工具在浏览器本地运行，不上传答案。">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://fangmumu111-bot.github.io/gpt-daichong-safety-checklist/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="GPT代充安全吗？购买前 5 分钟安全核验工具">
+  <meta property="og:description" content="不打分、不排行：检查敏感凭证、共享账号、付款信息、订单查询和售后边界。">
+  <meta property="og:url" content="https://fangmumu111-bot.github.io/gpt-daichong-safety-checklist/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GPT代充安全吗？购买前安全核验清单">
+  <meta name="twitter:description" content="20 项公开事实清单与本地核验工具，不上传答案。">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://fangmumu111-bot.github.io/gpt-daichong-safety-checklist/#app",
+        "name": "GPT 代充安全核验工具",
+        "url": "https://fangmumu111-bot.github.io/gpt-daichong-safety-checklist/",
+        "description": "购买 GPT 代充或 ChatGPT Plus、Pro 会员升级服务前的公开事实核验工具。",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript for interactive results; the checklist remains readable without it.",
+        "isAccessibleForFree": true,
+        "datePublished": "2026-08-12",
+        "dateModified": "2026-08-12",
+        "author": {
+          "@type": "Organization",
+          "name": "AIXiamo"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://fangmumu111-bot.github.io/gpt-daichong-safety-checklist/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "GPT代充一定不安全吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不能只凭代充两个字下结论。应检查是否升级自己的账号、是否索取敏感凭证、付款信息是否透明，以及订单、失败、退款和售后规则是否公开。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "为什么不能提供密码或验证码？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "密码、验证码、恢复码、Passkey、Session、Cookie 和 API Key 都可能授予账号或资源访问能力。购买会员升级服务不应以交出这些凭证为前提。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "清单全部通过就代表绝对安全吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不代表。全部通过只表示没有触发本清单覆盖的明显风险，第三方服务、平台规则和支付环境仍可能变化。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #586174;
+      --line: #dce2ec;
+      --paper: #ffffff;
+      --wash: #f4f7fb;
+      --brand: #2457e6;
+      --brand-dark: #183da4;
+      --danger: #b42318;
+      --danger-bg: #fff1f0;
+      --warn: #9a6700;
+      --warn-bg: #fff8dc;
+      --ok: #067647;
+      --ok-bg: #ecfdf3;
+      --shadow: 0 18px 50px rgba(23, 32, 51, .09);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--brand-dark); }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .topbar {
+      background: #101828;
+      color: #e8eefc;
+      font-size: .9rem;
+      padding: .65rem 1rem;
+      text-align: center;
+    }
+
+    .topbar a { color: #fff; }
+
+    main {
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 3.5rem 0 5rem;
+    }
+
+    .hero {
+      max-width: 780px;
+      margin-bottom: 2rem;
+    }
+
+    .eyebrow {
+      color: var(--brand-dark);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(2.05rem, 6vw, 4.1rem);
+      line-height: 1.07;
+      letter-spacing: -.045em;
+      margin: .6rem 0 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 3vw, 1.85rem);
+      line-height: 1.25;
+      margin: 0 0 .55rem;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 720px;
+    }
+
+    .privacy-note {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      border: 1px solid #c9d7fb;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #23458f;
+      font-size: .9rem;
+      padding: .45rem .8rem;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      margin: 1.25rem 0;
+      padding: clamp(1.15rem, 4vw, 2rem);
+    }
+
+    .card-intro {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    fieldset {
+      border: 0;
+      margin: 1.3rem 0 0;
+      padding: 0;
+    }
+
+    legend {
+      font-size: 1.03rem;
+      font-weight: 750;
+      margin-bottom: .7rem;
+    }
+
+    .option {
+      align-items: flex-start;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      gap: .8rem;
+      margin: .65rem 0;
+      padding: .9rem 1rem;
+      transition: border-color .15s ease, background .15s ease;
+    }
+
+    .option:hover { border-color: #9eb5f5; }
+    .option:has(input:checked) { background: #f0f5ff; border-color: #7395ed; }
+    .option.risk:has(input:checked) { background: var(--danger-bg); border-color: #f5aaa2; }
+
+    input[type="checkbox"] {
+      accent-color: var(--brand);
+      flex: 0 0 auto;
+      height: 1.15rem;
+      margin-top: .25rem;
+      width: 1.15rem;
+    }
+
+    .option.risk input { accent-color: var(--danger); }
+
+    .option strong { display: block; }
+    .option small { color: var(--muted); display: block; margin-top: .15rem; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1.4rem;
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 750;
+      padding: .75rem 1rem;
+    }
+
+    .primary { background: var(--brand); color: #fff; }
+    .primary:hover { background: var(--brand-dark); }
+    .secondary { background: #edf0f5; color: var(--ink); }
+
+    .result {
+      border-left: 5px solid var(--brand);
+      border-radius: 12px;
+      margin-top: 1.25rem;
+      padding: 1rem 1.1rem;
+    }
+
+    .result h3 { margin: 0 0 .2rem; }
+    .result p { margin: 0; }
+    .result.stop { background: var(--danger-bg); border-color: var(--danger); }
+    .result.verify { background: var(--warn-bg); border-color: var(--warn); }
+    .result.continue { background: var(--ok-bg); border-color: var(--ok); }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: 1.2rem 0 0;
+    }
+
+    .mini {
+      border-top: 3px solid var(--line);
+      padding-top: .85rem;
+    }
+
+    .mini h3 { font-size: 1rem; margin: 0 0 .25rem; }
+    .mini p { color: var(--muted); font-size: .92rem; margin: 0; }
+
+    details {
+      border-top: 1px solid var(--line);
+      padding: 1rem 0;
+    }
+
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 750; }
+    details p { color: var(--muted); margin-bottom: 0; }
+
+    footer {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 700px) {
+      main { padding-top: 2.2rem; }
+      .grid { grid-template-columns: 1fr; }
+      .privacy-note { align-items: flex-start; border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">开源、免费、无追踪 · <a href="https://github.com/fangmumu111-bot/gpt-daichong-safety-checklist">查看仓库与更新记录</a></div>
+  <main>
+    <header class="hero">
+      <div class="eyebrow">2026 · 购买前事实核验</div>
+      <h1>GPT代充安全吗？先做 5 分钟核验</h1>
+      <p class="lead">不看平台排名，不信“绝对安全”。先检查账号是不是你自己的、是否索取密码或验证码、付款信息是否透明，以及订单、退款和售后边界能否公开验证。</p>
+      <p class="privacy-note"><span aria-hidden="true">●</span> 所有勾选只在当前浏览器中计算，不上传、不保存，也不要求填写任何订单或账号信息。</p>
+    </header>
+
+    <section class="card" aria-labelledby="checker-title">
+      <h2 id="checker-title">快速核验器</h2>
+      <p class="card-intro">先勾选已经出现的红线，再勾选你能用公开页面证明的通过项。不要凭客服口头承诺代替证据。</p>
+
+      <fieldset>
+        <legend>第一步：是否出现任意红线？</legend>
+        <label class="option risk">
+          <input class="risk-input" type="checkbox">
+          <span><strong>索要密码、验证码或恢复凭证</strong><small>包括邮箱/短信验证码、恢复码、Passkey 或安全密钥。</small></span>
+        </label>
+        <label class="option risk">
+          <input class="risk-input" type="checkbox">
+          <span><strong>索要 Session、Cookie、Token 或 API Key</strong><small>这些内容可能直接授予账号、会话或 API 访问能力。</small></span>
+        </label>
+        <label class="option risk">
+          <input class="risk-input" type="checkbox">
+          <span><strong>出售或长期出租共享账号</strong><small>你无法独立控制账号、登录方式和历史会话。</small></span>
+        </label>
+        <label class="option risk">
+          <input class="risk-input" type="checkbox">
+          <span><strong>冒充 OpenAI 官方或伪造社会证明</strong><small>所谓授权、评价、销量或成功率没有可验证来源。</small></span>
+        </label>
+        <label class="option risk">
+          <input class="risk-input" type="checkbox">
+          <span><strong>付款对象、币种或链网络无法确认</strong><small>临时换价、换地址，或要求在网络不明时先付款。</small></span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>第二步：哪些通过项已有公开证据？</legend>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>升级我自己控制的账号</strong><small>不是共享、租用或来历不明的账号。</small></span>
+        </label>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>明确不索取任何敏感凭证</strong><small>密码、验证码、恢复码、Passkey、Session、Cookie 和 API Key 均不需要。</small></span>
+        </label>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>商品和交付对象清楚</strong><small>会员、额度与 API 余额没有混为一谈。</small></span>
+        </label>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>非官方关系和维护者已披露</strong><small>没有冒充 OpenAI 官方或独立第三方测评。</small></span>
+        </label>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>价格、支付方式与更新时间清楚</strong><small>付款当天能核对总价、币种、网络和适用日期。</small></span>
+        </label>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>订单状态可以独立查询</strong><small>不只依赖聊天截图或口头回复。</small></span>
+        </label>
+        <label class="option">
+          <input class="evidence-input" type="checkbox">
+          <span><strong>失败、退款与售后边界公开</strong><small>超时、错链、人工复核和退款条件都有说明。</small></span>
+        </label>
+      </fieldset>
+
+      <div class="actions">
+        <button class="primary" id="evaluate" type="button">查看核验结果</button>
+        <button class="secondary" id="reset" type="button">清空勾选</button>
+      </div>
+
+      <div class="result" id="result" role="status" aria-live="polite">
+        <h3>尚未开始核验</h3>
+        <p>完成勾选后查看结果。任何红线都优先于通过项。</p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="meaning-title">
+      <h2 id="meaning-title">结果只分三类，不做安全打分</h2>
+      <div class="grid">
+        <div class="mini">
+          <h3>停止</h3>
+          <p>触发敏感凭证、共享账号、冒充官方或付款对象不明等红线。</p>
+        </div>
+        <div class="mini">
+          <h3>暂缓并补证据</h3>
+          <p>没有红线，但价格、订单或售后仍有未知项。未知不等于安全。</p>
+        </div>
+        <div class="mini">
+          <h3>可继续独立评估</h3>
+          <p>公开信息齐全且未触发明显风险，但仍不代表绝对安全。</p>
+        </div>
+      </div>
+      <p><a href="https://github.com/fangmumu111-bot/gpt-daichong-safety-checklist/blob/main/CHECKLIST.md">查看 20 项完整清单</a> · <a href="https://github.com/fangmumu111-bot/gpt-daichong-safety-checklist/blob/main/checklist.json">读取机器可用 JSON</a> · <a href="https://github.com/fangmumu111-bot/gpt-daichong-safety-checklist/blob/main/INCIDENT-RESPONSE.md">异常后的止损步骤</a></p>
+    </section>
+
+    <section class="card" aria-labelledby="faq-title">
+      <h2 id="faq-title">常见问题</h2>
+      <details>
+        <summary>GPT代充一定不安全吗？</summary>
+        <p>不能只凭“代充”两个字下结论。重点是账号控制权、敏感凭证边界、付款透明度，以及订单、失败、退款和售后规则能否被公开验证。</p>
+      </details>
+      <details>
+        <summary>为什么不能提供密码或验证码？</summary>
+        <p>密码、验证码、恢复码、Passkey、Session、Cookie 和 API Key 都可能授予账号或资源访问能力。会员升级不应以交出这些凭证为前提。</p>
+      </details>
+      <details>
+        <summary>清单全部通过就代表绝对安全吗？</summary>
+        <p>不代表。全部通过只表示没有触发本清单覆盖的明显风险；第三方服务、平台规则和支付环境仍可能变化。</p>
+      </details>
+    </section>
+
+    <section class="card" aria-labelledby="next-title">
+      <h2 id="next-title">你的问题如果是“国内怎么充值”</h2>
+      <p>本页只处理购买前安全核验。Plus / Pro 怎么选、国内支付方式与订单查询，请阅读同由 AIXiamo 维护的 <a href="https://github.com/momochoog/gpt-daichong">开源版 GPT 国内充值指南（gpt-daichong）</a>。</p>
+      <p>账号安全处置以 <a href="https://help.openai.com/en/articles/8304786-preventing-unauthorized-usage">OpenAI 官方账号安全指南</a>和<a href="https://help.openai.com/en/articles/20001257-managing-active-sessions-in-chatgpt/">活动会话说明</a>为准。</p>
+    </section>
+
+    <footer>
+      <p>维护关系：本项目由 AIXiamo 维护，维护者也提供相关付费服务；它不是 OpenAI 官方项目或独立第三方测评。<a href="https://github.com/fangmumu111-bot/gpt-daichong-safety-checklist/blob/main/DISCLOSURE.md">查看完整利益披露</a>。</p>
+      <p>最近事实核验：2026-08-12 · MIT License</p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const risks = Array.from(document.querySelectorAll('.risk-input'));
+      const evidence = Array.from(document.querySelectorAll('.evidence-input'));
+      const result = document.getElementById('result');
+
+      function render(kind, title, message) {
+        result.className = 'result ' + kind;
+        result.innerHTML = '<h3>' + title + '</h3><p>' + message + '</p>';
+      }
+
+      document.getElementById('evaluate').addEventListener('click', function () {
+        const riskCount = risks.filter(function (input) { return input.checked; }).length;
+        const evidenceCount = evidence.filter(function (input) { return input.checked; }).length;
+
+        if (riskCount > 0) {
+          render('stop', '停止：已触发 ' + riskCount + ' 项红线', '不要继续付款或传输信息。若已提供凭证或完成付款，请立即查看异常止损步骤。');
+          return;
+        }
+
+        if (evidenceCount < evidence.length) {
+          const missing = evidence.length - evidenceCount;
+          render('verify', '暂缓付款：还缺 ' + missing + ' 项公开证据', '先补齐未知项并保存核验日期。客服口头承诺不能替代可查询的公开规则。');
+          return;
+        }
+
+        render('continue', '可继续独立评估', '当前未触发红线，且 7 项基础证据齐全。这不是绝对安全保证；付款当天仍应重新核对价格、支付方式和规则。');
+      });
+
+      document.getElementById('reset').addEventListener('click', function () {
+        risks.concat(evidence).forEach(function (input) { input.checked = false; });
+        render('', '尚未开始核验', '完成勾选后查看结果。任何红线都优先于通过项。');
+      });
+    }());
+  </script>
+</body>
+</html>

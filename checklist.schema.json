@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fangmumu111-bot.github.io/gpt-daichong-safety-checklist/checklist.schema.json",
+  "title": "GPT 代充安全核验清单",
+  "description": "购买第三方 GPT 代充或 ChatGPT 会员升级服务前的公开事实核验结构。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "version",
+    "last_verified",
+    "language",
+    "purpose",
+    "privacy",
+    "outcomes",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "language": {
+      "const": "zh-CN"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 10
+    },
+    "privacy": {
+      "type": "string",
+      "minLength": 10
+    },
+    "outcomes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stop", "verify", "continue"],
+      "properties": {
+        "stop": {"type": "string", "minLength": 10},
+        "verify": {"type": "string", "minLength": 10},
+        "continue": {"type": "string", "minLength": 10}
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "category",
+          "severity",
+          "question",
+          "pass_condition",
+          "evidence_type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][0-9]+$"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "account",
+              "credential",
+              "product",
+              "identity",
+              "freshness",
+              "payment",
+              "pressure",
+              "order",
+              "support",
+              "refund",
+              "evidence"
+            ]
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["stop", "verify"]
+          },
+          "question": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pass_condition": {
+            "type": "string",
+            "minLength": 8
+          },
+          "evidence_type": {
+            "type": "string",
+            "minLength": 3
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "./checklist.schema.json",
+  "version": "1.0.0",
+  "last_verified": "2026-08-12",
+  "language": "zh-CN",
+  "purpose": "购买 GPT 代充或 ChatGPT 会员升级服务前的公开事实核验",
+  "privacy": "只记录公开证据，不记录订单号、联系方式、IP、钱包地址、交易哈希或登录凭证。",
+  "outcomes": {
+    "stop": "触发账号凭证、共享账号、冒充官方或付款对象不明等红线，应停止交易。",
+    "verify": "没有红线，但存在未知项；补充公开证据后再决定。",
+    "continue": "未触发本清单覆盖的明显风险，可继续独立评估；不代表零风险。"
+  },
+  "items": [
+    {
+      "id": "A1",
+      "category": "account",
+      "severity": "stop",
+      "question": "升级对象是否为购买者自己控制的 ChatGPT 账号？",
+      "pass_condition": "不是共享、租用或来历不明的新账号。",
+      "evidence_type": "public_policy"
+    },
+    {
+      "id": "A2",
+      "category": "credential",
+      "severity": "stop",
+      "question": "服务方是否明确不索取密码？",
+      "pass_condition": "公开页面写明不索取或代设密码。",
+      "evidence_type": "public_policy"
+    },
+    {
+      "id": "A3",
+      "category": "credential",
+      "severity": "stop",
+      "question": "服务方是否明确不索取邮箱、短信或身份验证验证码？",
+      "pass_condition": "公开页面写明不索取任何登录验证码。",
+      "evidence_type": "public_policy"
+    },
+    {
+      "id": "A4",
+      "category": "credential",
+      "severity": "stop",
+      "question": "服务方是否明确不索取恢复码、备份码、Passkey 或安全密钥？",
+      "pass_condition": "公开页面写明不索取恢复与强认证凭证。",
+      "evidence_type": "public_policy"
+    },
+    {
+      "id": "A5",
+      "category": "credential",
+      "severity": "stop",
+      "question": "服务方是否明确不索取 Session、Cookie、Token 或 API Key？",
+      "pass_condition": "公开页面写明不索取会话和 API 凭证。",
+      "evidence_type": "public_policy"
+    },
+    {
+      "id": "A6",
+      "category": "account",
+      "severity": "stop",
+      "question": "服务方是否不会要求关闭 MFA 或忽略异常登录提醒？",
+      "pass_condition": "流程不以削弱账号安全保护为前提。",
+      "evidence_type": "public_policy"
+    },
+    {
+      "id": "B1",
+      "category": "product",
+      "severity": "verify",
+      "question": "商品名称是否明确？",
+      "pass_condition": "Plus、Pro 5x、Pro 20x 或其他商品没有混写。",
+      "evidence_type": "product_page"
+    },
+    {
+      "id": "B2",
+      "category": "product",
+      "severity": "verify",
+      "question": "交付对象是否明确？",
+      "pass_condition": "会员、额度、API 余额或独立服务没有混为一谈。",
+      "evidence_type": "product_page"
+    },
+    {
+      "id": "B3",
+      "category": "identity",
+      "severity": "stop",
+      "question": "页面是否清楚披露其与 OpenAI 的关系？",
+      "pass_condition": "不冒充 OpenAI 官方，维护者和商业关系可查。",
+      "evidence_type": "disclosure"
+    },
+    {
+      "id": "B4",
+      "category": "freshness",
+      "severity": "verify",
+      "question": "价格、支付方式和规则是否有可见更新时间？",
+      "pass_condition": "能判断信息是否仍适用于付款当天。",
+      "evidence_type": "dated_page"
+    },
+    {
+      "id": "C1",
+      "category": "payment",
+      "severity": "verify",
+      "question": "付款前是否能看到总价和币种？",
+      "pass_condition": "总价、币种以及可能的链上手续费边界清楚。",
+      "evidence_type": "checkout_page"
+    },
+    {
+      "id": "C2",
+      "category": "payment",
+      "severity": "verify",
+      "question": "公开支付方式是否与结账页一致？",
+      "pass_condition": "没有用已停止支持的支付方式诱导进入结账。",
+      "evidence_type": "checkout_page"
+    },
+    {
+      "id": "C3",
+      "category": "payment",
+      "severity": "stop",
+      "question": "若使用 USDT，链网络和收款对象是否能在付款前核对？",
+      "pass_condition": "网络和收款信息明确，不要求猜测或跨链发送。",
+      "evidence_type": "checkout_page"
+    },
+    {
+      "id": "C4",
+      "category": "payment",
+      "severity": "verify",
+      "question": "付款金额是否对应唯一、明确的商品？",
+      "pass_condition": "购买者知道金额对应哪个商品及订单。",
+      "evidence_type": "order_page"
+    },
+    {
+      "id": "C5",
+      "category": "pressure",
+      "severity": "verify",
+      "question": "是否没有无法核实的限时或内部名额压力？",
+      "pass_condition": "购买者有足够时间完成核验，不被迫跳过步骤。",
+      "evidence_type": "public_page"
+    },
+    {
+      "id": "D1",
+      "category": "order",
+      "severity": "verify",
+      "question": "是否有稳定的订单状态查询入口？",
+      "pass_condition": "订单状态可查，不只依赖私聊截图。",
+      "evidence_type": "order_query"
+    },
+    {
+      "id": "D2",
+      "category": "support",
+      "severity": "verify",
+      "question": "支付失败、超时、错链或金额不符的处理方式是否公开？",
+      "pass_condition": "异常场景和下一步动作可查。",
+      "evidence_type": "support_policy"
+    },
+    {
+      "id": "D3",
+      "category": "support",
+      "severity": "verify",
+      "question": "人工复核的触发条件是否公开？",
+      "pass_condition": "购买者知道何时需要人工处理及如何联系。",
+      "evidence_type": "support_policy"
+    },
+    {
+      "id": "D4",
+      "category": "refund",
+      "severity": "verify",
+      "question": "退款与售后边界是否公开？",
+      "pass_condition": "可退款与不可退款情形、证据要求和路径可查。",
+      "evidence_type": "refund_policy"
+    },
+    {
+      "id": "D5",
+      "category": "evidence",
+      "severity": "verify",
+      "question": "是否能在不公开隐私的前提下保存必要证据？",
+      "pass_condition": "公开页面、时间和状态可以本地保存并脱敏。",
+      "evidence_type": "public_page"
+    }
+  ]
+}
