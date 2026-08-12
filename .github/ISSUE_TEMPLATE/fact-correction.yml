@@ -1,0 +1,46 @@
+name: 事实修正
+description: 用公开来源和核验日期修正清单、来源或判断逻辑
+title: "[事实修正] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只提交可公开验证的事实。不要填写订单号、联系方式、IP、钱包地址、交易哈希、密码、验证码、恢复码、Session、Cookie、Token、API Key 或客户截图。
+  - type: input
+    id: source
+    attributes:
+      label: 公开来源 URL
+      description: 优先使用 OpenAI 官方页面或对应服务的公开规则页。
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: checked_at
+    attributes:
+      label: 核验日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前内容或行为
+      description: 指明文件、清单编号或页面区域，不要粘贴敏感数据。
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: 建议修正
+      description: 写出基于来源的最小修改。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我确认提交内容不含客户信息、付款标识或任何登录凭证。
+          required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: OpenAI 官方帮助中心
+    url: https://help.openai.com/
+    about: ChatGPT 账号、API Key 或未授权活动请通过 OpenAI 官方渠道处理，不要在公开 Issue 中提交。
