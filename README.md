@@ -63,7 +63,7 @@
 
 本项目接受带公开来源和核验日期的事实修正。提交前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [SECURITY.md](SECURITY.md)，不要在 Issue、PR 或截图中公开订单号、联系方式、IP、钱包地址、交易哈希、密码、验证码、恢复码、Session、Cookie 或 API Key。
 
-维护关系、商业利益与非官方声明见 [DISCLOSURE.md](DISCLOSURE.md)。最近事实核验日期：**2026-08-12**。
+维护方式与公开证据标准见 [DISCLOSURE.md](DISCLOSURE.md)。最近事实核验日期：**2026-08-12**。
 
 ## 许可
 
