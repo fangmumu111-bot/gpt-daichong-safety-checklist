@@ -80,7 +80,7 @@
       "category": "identity",
       "severity": "stop",
       "question": "页面是否清楚披露其与 OpenAI 的关系？",
-      "pass_condition": "不冒充 OpenAI 官方，维护者和商业关系可查。",
+      "pass_condition": "平台名称、规范域名、服务范围和运营信息一致且可查。",
       "evidence_type": "disclosure"
     },
     {
